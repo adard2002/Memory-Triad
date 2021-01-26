@@ -7,7 +7,11 @@ nav li{
     margin-top: 15px;
 }
 body{
-    background-color: grey;
+    background-image: url(/images/background.jpg);
+    color:rgb(207, 28, 28);
+    font-weight: bold;
+
+    text-shadow: 1px 1px 2px black;
 }
 main {
     display:inline-block;
@@ -24,7 +28,6 @@ aside {
     height:600px;
     float:left;
     width: 35%;
-    background-color: beige;
     box-shadow:5px 5px black;
     margin-left:10px;
 }
@@ -35,7 +38,6 @@ aside {
     float:right;
     width:57%;
     box-shadow:5px 5px black;
-    background-color: beige;
 }
 #question {
     margin-bottom:15px;
@@ -43,4 +45,5 @@ aside {
 button {
     margin:10px;
     border-radius: 10px;
+    background-color: blueviolet;
 }
