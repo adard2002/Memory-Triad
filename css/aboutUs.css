@@ -1,0 +1,37 @@
+* {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(180, 161, 55);
+  height: 50px;
+  font-size: 25px;
+}
+
+h2 {
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+nav {
+  display: inline-block;
+  padding-right: 788px;
+  padding-left: 800px;
+  padding-bottom: 15px;
+  background-color:rgb(180, 161, 55);
+  /* justify-content: space-around; */
+}
+
+#profilePic {
+  margin-left: 240px;
+  margin-top: 50px;
+  display: inline-block;
+
+}
+
+#desc {
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
