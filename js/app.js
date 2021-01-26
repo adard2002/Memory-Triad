@@ -28,7 +28,7 @@ var questions = [
     {
         question:"It is frequent for this creature to be carved into the bow of ships to bring good fortune to a voyage.",
         a1:"mermaid",
-        a2:"griffon",
+        a2:"griffin",
         a3:"kelpie",
         a4:"werewolf",
         correct:1
