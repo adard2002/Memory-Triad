@@ -18,8 +18,9 @@ body{
 }
 
 body p{
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 30px;
+    margin-top: 15px;
+    
 }
 header{
     text-align: center;
@@ -31,12 +32,12 @@ section {
     margin: 50px;
 }
  #cards li{
-    height: 500px;
+    height: 610px;
     width: 500px;
    
 } 
 img{
-    height: 500px;
+    height: 610px;
     width: 500px; 
     
 }
@@ -54,7 +55,7 @@ figcaption{
     display: inline-block;
     background-color: transparent;
     width: 500px;
-    height: 500px;
+    height: 610px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
