@@ -2,36 +2,94 @@
   margin: auto;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 h1 {
   text-align: center;
   background-color: rgb(180, 161, 55);
   height: 50px;
-  font-size: 25px;
+  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
+  font-size: 25px;
   margin-bottom: 50px;
   text-decoration: underline;
 }
 
 nav {
-  display: inline-block;
-  padding-right: 788px;
-  padding-left: 800px;
+  width: 100%;
   padding-bottom: 15px;
+  padding-top: 15px;
   background-color:rgb(180, 161, 55);
-  /* justify-content: space-around; */
+  text-align: center;
+} 
+
+nav li {
+  justify-content: space-around; 
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #profilePic {
-  margin-left: 240px;
+  margin-left: 200px;
   margin-top: 50px;
   display: inline-block;
-
 }
 
-#desc {
-  margin-top: 50px;
-  font-size: 20px;
+img {
+  box-shadow: 10px 10px 5px grey;
   text-align: center;
 }
+
+div.item {
+  vertical-align: top;
+  margin-left: 250px;
+  margin-top: 50px;
+  display: inline-block;
+  text-align: center;
+  /* width: 120px; */
+}
+
+img {
+  margin-bottom: 25px;
+  width: 250px;
+  height: 250px;
+  background-color: grey;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+span {
+  text-align: center;
+  /* margin-left: 25px; */
+}
+
+.caption {
+  display: block;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+}
+
+/* #desc p {
+
+} */
+
+/* #desc {
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 200px;
+  font-size: 20px;
+  text-align: center;
+} */
