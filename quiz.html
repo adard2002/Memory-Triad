@@ -10,6 +10,7 @@
         <link rel="stylesheet"   type="text/css"   href="css/reset.css">
         <link rel="stylesheet"   type="text/css"   href="css/quiz-css.css">
     </head>
+    <body>
     <header>
         <nav>
           <ul>
@@ -18,7 +19,27 @@
           </ul>
         </nav>
       </header>
-    <body>
+      <main>
+        <aside id="results">
+          <h2> High Scores</h2>
+            <ul id="scores">
+
+            </ul>
+        </aside>
+        <section id="quiz">
+          <h2> The Quiz </h2>
+          <p id="question"></p>
+      
+          <button type="button" id="a1" onclick="checkAnswer(0)"> Select This Answer</button>
+       
+          <button type="button" id="a2" onclick="checkAnswer(1)"> Select This Answer</button>
+   
+          <button type="button" id="a3" onclick="checkAnswer(2)"> Select This Answer</button>
+       
+          <button type="button" id="a4" onclick="checkAnswer(3)"> Select This Answer</button>
+          <p id="turn-count"></p>
+        </section>
+      </main>
      
         
         <script src="js/app.js"></script>
