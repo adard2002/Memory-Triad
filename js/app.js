@@ -79,23 +79,6 @@ if (loadScoreObject) {
     }    
 }
 
-// var scoreArray = [
-//     [
-//          3,
-//         "",
-//         0
-//     ],
-//     [
-//         3,
-//         "",
-//         0
-//     ],
-//     [
-//         3,
-//         "",
-//         0
-//     ]
-// ]
 
 function displayScores () {
     var scoreList = document.getElementById('scores');
@@ -118,12 +101,11 @@ function displayScores () {
 
 
 function nextQuestion() {
-    //currentQuestionIndex = Math.floor(Math.random()*(questions.length)+1);
     currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
-    while (currentQuestionIndex in askedAlready) {
-        currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
-    }
-    askedAlready.push(currentQuestionIndex);
+    // while (currentQuestionIndex in askedAlready) {
+    //     currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
+    // }
+    // askedAlready.push(0,currentQuestionIndex);
     var questionOnPage = document.getElementById('question');
     questionOnPage.innerHTML = questions[currentQuestionIndex].question;
     var button1 = document.getElementById('a1');
@@ -148,6 +130,7 @@ function nextQuestion() {
 
 function refreshQuiz() {
     turns = 3;
+    console.log("refreshing quiz");
     turnsTaken = 0;
     correctAnswers = 0;
     rollAgain = true;
@@ -178,51 +161,32 @@ function checkAnswer(index) {
 
 function endResults() {
     var d = new Date();
+    console.log("computing results");
+    var year = d.getFullYear();
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var hour = d.getHours();
+    var minutes = d.getMinutes();
+    var theDate = month + "-" + day + "-" + year + " " + hour + ":" + minutes;
     if (correctAnswers > scoreSet.score1Correct) {
         scoreSet.score3Correct = scoreSet.score2Correct;
         scoreSet.score3Date = scoreSet.score2Date;
         scoreSet.score2Correct = scoreSet.score1Correct;
         scoreSet.score2Date = scoreSet.score1Date;
         scoreSet.score1Correct = correctAnswers;
-        scoreSet.score1Date = d;
+        scoreSet.score1Date = theDate;
     } else if (correctAnswers > scoreSet.score2Correct) {
         scoreSet.score3Correct = scoreSet.score2Correct;
         scoreSet.score3Date = scoreSet.score2Date;
         scoreSet.score2Correct = correctAnswers;
-        scoreSet.score2Date = d;
+        scoreSet.score2Date = theDate;
     } else if (correctAnswers > scoreSet.score3Correct) {
         scoreSet.score3Correct = correctAnswers;
-        scoreSet.score3Date = d;
+        scoreSet.score3Date = theDate;
     } 
     localStorage.setItem('savedScores', JSON.stringify(scoreSet));
+    console.log('saving scores now');
     displayScores();
 }
-// function checkAnswer2() {
-//     console.log("the second button was clicked");
-//     if (questions[currentQuestionIndex].correct === 2) {
-//         alert('That is correct!');
-//     } else {
-//         alert("No, the correct answer was " + questions[currentQuestionIndex].answers[questions[currentQuestionIndex].correct-1] );
-//         nextQuestion();
-//     }
-// }
-// function checkAnswer3() {
-//     console.log("The third button was clicked");
-//     if (questions[currentQuestionIndex].correct === 3) {
-//         alert('That is correct!');
-//     } else {
-//         alert("No, the correct answer was " + questions[currentQuestionIndex].answers[questions[currentQuestionIndex].correct-1] );
-//         nextQuestion();
-//     }
-// }
-// function checkAnswer4() {
-//     console.log("the fourth button was clicked");
-//     if (questions[currentQuestionIndex].correct === 4) {
-//         alert('That is correct!');
-//     } else {
-//         alert("No, the correct answer was " + questions[currentQuestionIndex].answers[questions[currentQuestionIndex].correct-1] );
-//         nextQuestion();
-//     }
-// }
 
 nextQuestion();
