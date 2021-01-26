@@ -53,20 +53,59 @@ var questions = [
     }
 ];
 var currentQuestionIndex = 0;
-
 var turns = 3;
 var turnsTaken = 0;
 var correctAnswers = 0;
 var rollAgain = true;
 var askedAlready = [];
 
-function nextQuestion() {
-    //currentQuestionIndex = Math.floor(Math.random()*(questions.length)+1);
-    currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
-    while (currentQuestionIndex in askedAlready) {
-        currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
+
+
+var loadScoreObject = localStorage.getItem('savedScores');
+if (loadScoreObject) {
+    console.log('found saved scores in local storage, commencing loading sequence');
+    var scoreSet = JSON.parse(loadScoreObject);
+} else {
+    var scoreSet = {
+        score1Rank:1,
+        score1Date:"",
+        score1Correct:0,
+        score2Rank:2,
+        score2Date:"",
+        score2Correct:0,
+        score3Rank:3,
+        score3Date:"",
+        score3Correct:0
+    }    
+}
+
+
+function displayScores () {
+    var scoreList = document.getElementById('scores');
+    var listItems = scoreList.getElementsByTagName('li');
+    while (listItems.length > 0) {
+        scoreList.removeChild(listItems[0]);
     }
-    askedAlready.push(currentQuestionIndex);
+    var Score1 = document.createElement('li');
+    Score1.textContent = scoreSet.score1Rank + " | " + scoreSet.score1Date + " | " + scoreSet.score1Correct;
+    scoreList.appendChild(Score1);
+    var Score2 = document.createElement('li');
+    Score2.textContent = scoreSet.score2Rank + " | " + scoreSet.score2Date + " | " + scoreSet.score2Correct;
+    scoreList.appendChild(Score2);
+    var Score3 = document.createElement('li');
+    Score3.textContent = scoreSet.score3Rank + " | " + scoreSet.score3Date + " | " + scoreSet.score3Correct;
+    scoreList.appendChild(Score3);
+}
+ displayScores();
+
+
+
+function nextQuestion() {
+    currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
+    // while (currentQuestionIndex in askedAlready) {
+    //     currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
+    // }
+    // askedAlready.push(0,currentQuestionIndex);
     var questionOnPage = document.getElementById('question');
     questionOnPage.innerHTML = questions[currentQuestionIndex].question;
     var button1 = document.getElementById('a1');
@@ -80,9 +119,31 @@ function nextQuestion() {
     turnsTaken ++;
     var displayTurns = document.getElementById('turn-count');
     displayTurns.textContent = turnsTaken + " out of " + turns;
-    if (turnsTaken >= turns) {
+    if (turnsTaken > turns) {
+        button1.disabled = true;
+        button2.disabled = true;
+        button3.disabled = true;
+        button4.disabled = true;
         endResults();
     }
+}
+
+function refreshQuiz() {
+    turns = 3;
+    console.log("refreshing quiz");
+    turnsTaken = 0;
+    correctAnswers = 0;
+    rollAgain = true;
+    askedAlready = [];
+    var button1 = document.getElementById('a1');
+    var button2 = document.getElementById('a2');
+    var button3 = document.getElementById('a3');
+    var button4 = document.getElementById('a4');
+    button1.disabled = false;
+    button2.disabled = false;
+    button3.disabled = false;
+    button4.disabled = false;
+    nextQuestion();
 }
 
 function checkAnswer(index) {
@@ -99,38 +160,34 @@ function checkAnswer(index) {
 }
 
 function endResults() {
-    var scoreList = document.getElementById('scores');
-    var newScore = document.createElement('li');
-    newScore.textContent = correctAnswers + " out of " + turns;
-    scoreList.appendChild(newScore);
+    var d = new Date();
+    console.log("computing results");
+    var year = d.getFullYear();
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var hour = d.getHours();
+    var minutes = d.getMinutes();
+    var theDate = month + "-" + day + "-" + year + " " + hour + ":" + minutes;
+    if (correctAnswers > scoreSet.score1Correct) {
+        scoreSet.score3Correct = scoreSet.score2Correct;
+        scoreSet.score3Date = scoreSet.score2Date;
+        scoreSet.score2Correct = scoreSet.score1Correct;
+        scoreSet.score2Date = scoreSet.score1Date;
+        scoreSet.score1Correct = correctAnswers;
+        scoreSet.score1Date = theDate;
+    } else if (correctAnswers > scoreSet.score2Correct) {
+        scoreSet.score3Correct = scoreSet.score2Correct;
+        scoreSet.score3Date = scoreSet.score2Date;
+        scoreSet.score2Correct = correctAnswers;
+        scoreSet.score2Date = theDate;
+    } else if (correctAnswers > scoreSet.score3Correct) {
+        scoreSet.score3Correct = correctAnswers;
+        scoreSet.score3Date = theDate;
+    } 
+    localStorage.setItem('savedScores', JSON.stringify(scoreSet));
+    console.log('saving scores now');
+    displayScores();
 }
-// function checkAnswer2() {
-//     console.log("the second button was clicked");
-//     if (questions[currentQuestionIndex].correct === 2) {
-//         alert('That is correct!');
-//     } else {
-//         alert("No, the correct answer was " + questions[currentQuestionIndex].answers[questions[currentQuestionIndex].correct-1] );
-//         nextQuestion();
-//     }
-// }
-// function checkAnswer3() {
-//     console.log("The third button was clicked");
-//     if (questions[currentQuestionIndex].correct === 3) {
-//         alert('That is correct!');
-//     } else {
-//         alert("No, the correct answer was " + questions[currentQuestionIndex].answers[questions[currentQuestionIndex].correct-1] );
-//         nextQuestion();
-//     }
-// }
-// function checkAnswer4() {
-//     console.log("the fourth button was clicked");
-//     if (questions[currentQuestionIndex].correct === 4) {
-//         alert('That is correct!');
-//     } else {
-//         alert("No, the correct answer was " + questions[currentQuestionIndex].answers[questions[currentQuestionIndex].correct-1] );
-//         nextQuestion();
-//     }
-// }
 
 nextQuestion();
 
