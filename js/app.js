@@ -162,7 +162,7 @@ var questions = [
         correct: 4
     },
     {
-        question: "Dragon had ___ which allowed them to fly:",
+        question: "Dragons had ___ which allowed them to fly:",
         a1: "Feet",
         a2: "Wings",
         a3: "A Head",
