@@ -16,6 +16,9 @@ nav li{
 body{
     background-color: grey;
 }
+body p {
+  font-size: 25px;
+}
 header{
     text-align: center;
     font-size: 50px;
