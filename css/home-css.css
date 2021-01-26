@@ -1,6 +1,7 @@
 
 nav{
-    background-color: rgb(63, 223, 0);
+    background-color: rgb(116, 0, 211);
+    
 }
 nav li{
     display: inline-block;
@@ -15,6 +16,10 @@ nav li{
 
 body{
     background-color: grey;
+    background-image: url('../images/background.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+    
 }
 
 body p{
@@ -34,6 +39,7 @@ section {
  #cards li{
     height: 610px;
     width: 500px;
+    background-color: rgb(189, 189, 189);
    
 } 
 img{
@@ -42,7 +48,7 @@ img{
     
 }
 figcaption{
-    background-color: white;
+    background-color: rgb(189, 189, 189);
     font-size: 25px;
     /* margin-bottom: 20px;
     padding: 20px; */
@@ -51,7 +57,7 @@ figcaption{
     /* flip code found on https://www.w3schools.com/howto/howto_css_flip_image.asp */
 .flip-box {
     margin: 25px;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     display: inline-block;
     background-color: transparent;
     width: 500px;
@@ -85,7 +91,7 @@ figcaption{
   
   /* Style the back side */
   .flip-box-back {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(189, 189, 189);
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
   }
