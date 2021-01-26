@@ -9,3 +9,38 @@ nav li{
 body{
     background-color: grey;
 }
+main {
+    display:inline-block;
+    width:100%;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+aside {
+    margin: 0 auto;
+    height:600px;
+    float:left;
+    width: 35%;
+    background-color: beige;
+    box-shadow:5px 5px black;
+    margin-left:10px;
+}
+#quiz {
+    margin: 0 auto;
+    margin-right:15px;
+    height: 600px;
+    float:right;
+    width:57%;
+    box-shadow:5px 5px black;
+    background-color: beige;
+}
+#question {
+    margin-bottom:15px;
+}
+button {
+    margin:10px;
+    border-radius: 10px;
+}
