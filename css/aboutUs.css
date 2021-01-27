@@ -15,11 +15,19 @@ h1 {
   height: 50px;
   font-size: 30px;
   background-color: yellowgreen;
+  color: rgb(68, 95, 15);
 }
 
 h2 {
   font-size: 25px;
   margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+h3 {
+  margin-top: 90px;
+  margin-bottom: 25px;
+  font-size: 20px;
   text-decoration: underline;
 }
 
@@ -47,11 +55,10 @@ nav li {
 
 div.item {
   vertical-align: top;
-  margin-left: 250px;
+  margin-left: 225px;
   margin-top: 50px;
   display: inline-block;
   text-align: center;
-  /* width: 120px; */
 }
 
 img {
@@ -64,14 +71,13 @@ img {
 img {
   height: 300px;
   width: 300px;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
 }
 
 span {
   text-align: center;
-  /* margin-left: 25px; */
   text-shadow: 2px 2px rgb(0, 0, 0);
-
+  font-size: 16px;
 }
 
 .caption {
@@ -81,15 +87,32 @@ span {
   text-align: center;
 }
 
-/* #desc p {
-
-} */
-
-/* #desc {
-  margin-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 200px;
-  font-size: 20px;
+.contact {
+  float: left;
+  display: block;
+  height: 200px;
+  width: 300px;
   text-align: center;
-} */
+}
+
+.contactLinks {
+  color:rgb(0, 230, 210);
+}
+
+.contactEmail {
+  color:rgb(0, 230, 210);
+}
+
+a {
+  color: green
+}
+
+a:hover {
+  color:rgb(191, 255, 179)
+}
+
+a:active {
+  text-decoration: underline;
+  background-color: black;
+}
+
