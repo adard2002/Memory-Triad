@@ -3,16 +3,16 @@
 }
 
 body {
-  height: 1050px;
+  /* height: 1050px; */
   background: url('../images/background.jpg');
-  background-repeat: no-repeat;
-  background-size: 2000px;
-  color: lightgreen;
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  color: rgb(176, 255, 180);
 }
 
 h1 {
   text-align: center;
-  height: 50px;
+  /* height: 50px; */
   font-size: 30px;
   background-color: yellowgreen;
   color: rgb(68, 95, 15);
@@ -20,19 +20,19 @@ h1 {
 
 h2 {
   font-size: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   text-decoration: underline;
 }
 
 h3 {
   margin-top: 90px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 20px;
   text-decoration: underline;
 }
 
 nav {
-  width: 100%;
+  /* width: 100%; */
   padding-bottom: 15px;
   padding-top: 15px;
   text-align: center;
@@ -40,7 +40,7 @@ nav {
 } 
 
 nav li {
-  justify-content: space-around; 
+  /* justify-content: space-around;  */
   display: inline-block;
   font-size: 20px;
   padding-left: 50px;
