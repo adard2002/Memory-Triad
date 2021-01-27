@@ -95,3 +95,25 @@ figcaption{
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
   }
+
+  #feedbackH1{
+      text-align: center;
+      font-size: 45px;
+  }
+  form{
+      display: inline-block;
+      /* margin: 50px; */
+      background-color: rgb(170, 166, 166);
+      padding: 5px;
+      border-radius: 25px;
+
+
+  }
+  form legend{
+      margin-top: 15px;
+      margin-bottom: 10px;
+  }
+  .form{
+      display: block;
+      text-align: center;
+  }
