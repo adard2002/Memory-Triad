@@ -2,12 +2,108 @@
 
 var questions = [
     {
+        question: "A female nymph associated with a tree is called what?",
+        a1: "Faun",
+        a2: "Goblin",
+        a3: "Banshee",
+        a4: "Dryad",
+        correct: 4
+    },
+    {
+        question: "Dryads were said to have raised what god while he was an infant?",
+        a1: "Zeus",
+        a2: "Artemis",
+        a3: "Allah",
+        a4: "Hades",
+        correct: 1
+    },
+    {
+        question: "The dryad comes from what cultural mythology?",
+        a1: "Persian",
+        a2: "Celtic",
+        a3: "Greek",
+        a4: "Japanese",
+        correct: 3
+    },
+    {
+        question: "The genie of the lamp that was found by Aladdin *first* appeared in what anthology of fictional stories?",
+        a1: "Disney",
+        a2: "A Thousand and One Nights",
+        a3: "The Quoran",
+        a4: "Homer's Illiad",
+        correct: 2
+    },
+    {
+        question: "Which of the following cultures do the tales of the Genie, or Djinn come from?",
+        a1: "Greek",
+        a2: "Japanese",
+        a3: "American Indian",
+        a4: "Arabic",
+        correct: 4
+    },
+    {
+        question: "The Djinn were known for what of the following traits?",
+        a1: "Punishing humans for harm, whether intentional or not.",
+        a2: "Being benevolent helpers of mankind.",
+        a3: "Having control over the weather.",
+        a4: "Having large horns and sharp teeth.",
+        correct: 1
+    },
+    {
+        question: "The thunderbird was so large it could pick up what?",
+        a1: "The moon",
+        a2: "Whales",
+        a3: "A Man",
+        a4: "A Car",
+        correct: 2
+    },
+    {
+        question: "It got its name because of what?",
+        a1: "The ACDC song Thunderstruck",
+        a2: "Its mating call",
+        a3: "The sound its wings made when flapping",
+        a4: "Because it only came when it stormed.",
+        correct: 3
+    },
+    {
+        question: "The Thunderbird is a symbol of what?",
+        a1: "Greatness",
+        a2: "Weakness",
+        a3: "Good",
+        a4: "Strength",
+        correct: 4
+    },
+    {
         question: "Mermaid legends are first found in what culture?",
         a1: "Irish",
         a2: "Syrian",
         a3: "Greek",
         a4: "Roman",
         correct:2
+    },
+    {
+        question: "What is a gorgon’s power?",
+        a1: "Ability to seduce men",
+        a2: "Ability to heal",
+        a3: "Causing people to go insane",
+        a4: "Turning people to stone and killing them by looking at them",
+        Correct:4
+    },
+    {
+        question: "What was the name of the gorgon sister who perished?",
+        a1: "Stheno",
+        a2: "Medusa",
+        a3: "Akasha",
+        a4: "Euryale",
+        Correct:2
+    },
+    {
+        question: "Who was Medusa slain by?",
+        a1: "Perseus",
+        a2: "Poseidon",
+        a3: "Athena",
+        a4: "Zeus",
+        correct:1
     },
     {
         question:" A creature that is half female human, and half fish is known as what?",
