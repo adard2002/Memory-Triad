@@ -16,14 +16,14 @@ nav li{
 
 body{
     background-color: grey;
-    background-image: url('../images/background.jpg');
+    /* background-image: url('../images/background.jpg'); */
     /* background-repeat: no-repeat; */
     background-size: 100%;
     
 }
 
 body p{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 15px;
     
 }
@@ -37,13 +37,13 @@ section {
     margin: 50px;
 }
  #cards li{
-    height: 610px;
+    height: 500px;
     width: 500px;
     background-color: rgb(189, 189, 189);
    
 } 
 img{
-    height: 610px;
+    height: 500px;
     width: 500px; 
     
 }
@@ -61,7 +61,7 @@ figcaption{
     display: inline-block;
     background-color: transparent;
     width: 500px;
-    height: 610px;
+    height: 500px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
