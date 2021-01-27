@@ -297,14 +297,35 @@ function displayScores () {
 }
  displayScores();
 
+ //this should run every new question and check the array of askedAlready and if the array contains a duplicate return true. 
+ //elsewhere there's a while loop that should keep generating a new number if this function is returning true
+
+function randomQuestion() {
+    for (var i = 0; i < askedAlready; i++) {
+        if (currentQuestionIndex === askedAlready[i]) {
+            console.log('found a duplicate');
+            return true;
+        }
+    }
+    return false;
+}
+
+
+    
+currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
 
 
 function nextQuestion() {
     currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
-    // while (currentQuestionIndex in askedAlready) {
-    //     currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
-    // }
-    // askedAlready.push(0,currentQuestionIndex);
+    //*** problem existing here, in that this while loop doesn't do what it should
+    while ( randomQuestion () ) {
+        console.log('in the while loop');
+        currentQuestionIndex = (Math.floor((Math.random() * questions.length) + 1))-1;
+        console.log(currentQuestionIndex);
+    }
+    //askedAlready[turnsTaken] = currentQuestionIndex;
+    askedAlready.push(currentQuestionIndex);
+    console.log(askedAlready);
     var questionOnPage = document.getElementById('question');
     questionOnPage.innerHTML = questions[currentQuestionIndex].question;
     var button1 = document.getElementById('a1');
