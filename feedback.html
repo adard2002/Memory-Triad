@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"   type="text/css"   href="css/reset.css">
+        <link rel="stylesheet"   type="text/css"   href="css/home-css.css">
+    </head>
+    <header>
+        <nav>
+            <!-- <h1>Welcome to our Mythical Creature Memory Site</h1> -->
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="quiz.html">Memory Quiz</a></li>
+            <li><a href="index.html">Homepage</a></li>
+          </ul>
+        </nav>
+      </header>
+    <body>
+        <h1 id="feedbackH1"> Feedback form</h1>
+        <div class='form'>
+            <form id="feedback">
+                <fieldset>
+                    <legend>Fill out this form to leave feedback for us.</legend>
+                    <label for="name"> First Name</label>
+                    <input id="name" type="text" required />
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required />
+
+                    <label for="comment">Comment here</label>
+                    <input id="comment" type="text" required />
+                </fieldset>
+                <button onclick="thankFunction()">Submit</button>
+            </form>
+        </div>
+        
+     
+        
+        <script src="js/indexJS.js"></script> 
+    </body>
+</html>
