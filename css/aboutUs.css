@@ -47,6 +47,27 @@ nav li {
   padding-right: 50px;
 }
 
+nav a:hover {
+  color:rgb(191, 255, 179);
+  text-decoration: underline;
+  border: 5px solid rgb(68, 95, 15);
+  background-color:rgb(68, 95, 15);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+
+nav a:visited {
+  text-decoration: underline;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+
+
+
 #profilePic {
   margin-left: 200px;
   margin-top: 50px;
@@ -93,6 +114,7 @@ span {
   height: 200px;
   width: 300px;
   text-align: center;
+  line-height: 20px;
 }
 
 .contactLinks {
@@ -103,16 +125,6 @@ span {
   color:rgb(0, 230, 210);
 }
 
-a {
-  color: green
-}
 
-a:hover {
-  color:rgb(191, 255, 179)
-}
 
-a:active {
-  text-decoration: underline;
-  background-color: black;
-}
 
