@@ -214,5 +214,10 @@ img {
   
  .contactEmail {
   color:rgb(0, 230, 210);
- }
- 
+
+}
+
+#center {
+  text-align: center;
+}
+
