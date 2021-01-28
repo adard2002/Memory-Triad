@@ -22,12 +22,29 @@
       <main>
         <aside id="results">
           <h2> High Scores</h2>
-            <ul id="scores">
+            <p>Short Quizzes</p>
+            <ul id="scores-short">
 
+            </ul>
+            <p>Medium Quizzes</p>
+            <ul id="scores-med">
+
+            </ul>
+            <p>Long Quizzes</p>
+            <ul id="scores-long">
+              
             </ul>
         </aside>
         <section id="quiz">
           <h2> The Quiz </h2>
+          <div id="radio-buttons">
+            <input type="radio" id="short" name="quiz-size" value="short" onclick="quizSize(1)">
+            <label for="short">Short Quiz</label>
+            <input type="radio" id="medium" name="quiz-size" value="medium" onclick="quizSize(2)">
+            <label for="short">Medium Quiz</label>
+            <input type="radio" id="long" name="quiz-size" value="long" onclick="quizSize(3)">
+            <label for="short">Long Quiz</label>
+        </div>
           <p id="question"></p>
       
           <button type="button" id="a1" onclick="checkAnswer(0)"> Select This Answer</button>
@@ -38,7 +55,6 @@
        
           <button type="button" id="a4" onclick="checkAnswer(3)"> Select This Answer</button>
           <p id="turn-count"></p>
-          <button type="button" id="refresh" onclick="refreshQuiz()"> Refresh the Quiz</button>
         </section>
       </main>
      
