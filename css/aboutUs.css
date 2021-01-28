@@ -4,7 +4,7 @@
 
 body {
   /* height: 1050px; */
-  background: url('../images/background.jpg');
+  /* background: url('../images/background.jpg'); */
   /* background-repeat: no-repeat; */
   background-size: 100%;
   color: rgb(176, 255, 180);
@@ -35,20 +35,11 @@ nav{
   background-color: rgb(116, 0, 211);
   
 }
+nav{
+  background-color: rgb(116, 0, 211);
+  
+}
 nav li{
-  display: inline-block;
-  color: whitesmoke;
-  padding: 15px; 
-  border-radius: 500px;
-  background-color: rgb(180, 161, 55);
-  margin-top: 15px;
-  font-size: 25px;
-  margin-bottom: 5px;
-}
-header{
-  text-align: center;
-  font-size: 50px;
-}
   display: inline-block;
   color: whitesmoke;
   padding: 15px; 

@@ -22,10 +22,10 @@ header{
 
 
 body{
-    background-image: url(/images/background.jpg);
+    /* background-image: url(/images/background.jpg); */
     color:rgb(207, 28, 28);
     font-weight: bold;
-
+    background-size: 100%;
     text-shadow: 1px 1px 2px black;
 }
 main {
