@@ -356,6 +356,28 @@ var turnsTaken = 0;
 var correctAnswers = 0;
 var rollAgain = true;
 var askedAlready = [];
+var size = 0;
+
+document.getElementById("medium").click();
+
+
+function quizSize(option) {
+    console.log('radio buttons clicked');
+    if (option === 1 ) {
+        turns = 10;
+        size = 1;
+    }
+    if (option ===2 ) {
+        turns = 20;
+        size = 2;
+    }
+    if (option === 3) {
+        turns = 30;
+        size = 3;
+    }
+    refreshQuiz();
+    nextQuestion();
+}
 
 
 
@@ -365,34 +387,83 @@ if (loadScoreObject) {
     var scoreSet = JSON.parse(loadScoreObject);
 } else {
     var scoreSet = {
-        score1Rank:1,
-        score1Date:"",
-        score1Correct:0,
-        score2Rank:2,
-        score2Date:"",
-        score2Correct:0,
-        score3Rank:3,
-        score3Date:"",
-        score3Correct:0
+        shortScore1Rank:1,
+        shortScore1Date:"",
+        shortScore1Correct:0,
+        shortScore2Rank:2,
+        shortScore2Date:"",
+        shortScore2Correct:0,
+        shortScore3Rank:3,
+        shortScore3Date:"",
+        shortScore3Correct:0,
+        medScore1Rank:1,
+        medScore1Date:"",
+        medScore1Correct:0,
+        medScore2Rank:2,
+        medScore2Date:"",
+        medScore2Correct:0,
+        medScore3Rank:3,
+        medScore3Date:"",
+        medScore3Correct:0,
+        longScore1Rank:1,
+        longScore1Date:"",
+        longScore1Correct:0,
+        longScore2Rank:2,
+        longScore2Date:"",
+        longScore2Correct:0,
+        longScore3Rank:3,
+        longScore3Date:"",
+        longScore3Correct:0
+
     }    
 }
 
 
 function displayScores () {
-    var scoreList = document.getElementById('scores');
-    var listItems = scoreList.getElementsByTagName('li');
+    var scoreList1 = document.getElementById('scores-short');
+    var listItems = scoreList1.getElementsByTagName('li');
     while (listItems.length > 0) {
-        scoreList.removeChild(listItems[0]);
+        scoreList1.removeChild(listItems[0]);
     }
     var Score1 = document.createElement('li');
-    Score1.textContent = scoreSet.score1Rank + " | " + scoreSet.score1Date + " | " + scoreSet.score1Correct;
-    scoreList.appendChild(Score1);
+    Score1.textContent = scoreSet.shortScore1Rank + " | " + scoreSet.shortScore1Date + " | " + scoreSet.shortScore1Correct;
+    scoreList1.appendChild(Score1);
     var Score2 = document.createElement('li');
-    Score2.textContent = scoreSet.score2Rank + " | " + scoreSet.score2Date + " | " + scoreSet.score2Correct;
-    scoreList.appendChild(Score2);
+    Score2.textContent = scoreSet.shortScore2Rank + " | " + scoreSet.shortScore2Date + " | " + scoreSet.shortScore2Correct;
+    scoreList1.appendChild(Score2);
     var Score3 = document.createElement('li');
-    Score3.textContent = scoreSet.score3Rank + " | " + scoreSet.score3Date + " | " + scoreSet.score3Correct;
-    scoreList.appendChild(Score3);
+    Score3.textContent = scoreSet.shortScore3Rank + " | " + scoreSet.shortScore3Date + " | " + scoreSet.shortScore3Correct;
+    scoreList1.appendChild(Score3);
+
+    var scoreList2 = document.getElementById('scores-med');
+    var listItems = scoreList2.getElementsByTagName('li');
+    while (listItems.length > 0) {
+        scoreList2.removeChild(listItems[0]);
+    }
+    var Score1 = document.createElement('li');
+    Score1.textContent = scoreSet.medScore1Rank + " | " + scoreSet.medScore1Date + " | " + scoreSet.medScore1Correct;
+    scoreList2.appendChild(Score1);
+    var Score2 = document.createElement('li');
+    Score2.textContent = scoreSet.medScore2Rank + " | " + scoreSet.medScore2Date + " | " + scoreSet.medScore2Correct;
+    scoreList2.appendChild(Score2);
+    var Score3 = document.createElement('li');
+    Score3.textContent = scoreSet.medScore3Rank + " | " + scoreSet.medScore3Date + " | " + scoreSet.medScore3Correct;
+    scoreList2.appendChild(Score3);
+
+    var scoreList3 = document.getElementById('scores-long');
+    var listItems = scoreList3.getElementsByTagName('li');
+    while (listItems.length > 0) {
+        scoreList3.removeChild(listItems[0]);
+    }
+    var Score1 = document.createElement('li');
+    Score1.textContent = scoreSet.longScore1Rank + " | " + scoreSet.longScore1Date + " | " + scoreSet.longScore1Correct;
+    scoreList3.appendChild(Score1);
+    var Score2 = document.createElement('li');
+    Score2.textContent = scoreSet.longScore2Rank + " | " + scoreSet.longScore2Date + " | " + scoreSet.longScore2Correct;
+    scoreList3.appendChild(Score2);
+    var Score3 = document.createElement('li');
+    Score3.textContent = scoreSet.longScore3Rank + " | " + scoreSet.longScore3Date + " | " + scoreSet.longScore3Correct;
+    scoreList3.appendChild(Score3);
 }
  displayScores();
 
@@ -454,6 +525,23 @@ function nextQuestion() {
         button4.disabled = true;
         endResults();
     }
+}
+
+function refreshQuiz() {
+    console.log("refreshing quiz");
+    turnsTaken = 0;
+    correctAnswers = 0;
+    rollAgain = true;
+    askedAlready = [];
+    var button1 = document.getElementById('a1');
+    var button2 = document.getElementById('a2');
+    var button3 = document.getElementById('a3');
+    var button4 = document.getElementById('a4');
+    button1.disabled = false;
+    button2.disabled = false;
+    button3.disabled = false;
+    button4.disabled = false;
+    nextQuestion();
 }
 
 // function refreshQuiz() {
@@ -748,22 +836,60 @@ function endResults() {
     var hour = d.getHours();
     var minutes = d.getMinutes();
     var theDate = month + "-" + day + "-" + year + " " + hour + ":" + minutes;
-    if (correctAnswers > scoreSet.score1Correct) {
-        scoreSet.score3Correct = scoreSet.score2Correct;
-        scoreSet.score3Date = scoreSet.score2Date;
-        scoreSet.score2Correct = scoreSet.score1Correct;
-        scoreSet.score2Date = scoreSet.score1Date;
-        scoreSet.score1Correct = correctAnswers;
-        scoreSet.score1Date = theDate;
-    } else if (correctAnswers > scoreSet.score2Correct) {
-        scoreSet.score3Correct = scoreSet.score2Correct;
-        scoreSet.score3Date = scoreSet.score2Date;
-        scoreSet.score2Correct = correctAnswers;
-        scoreSet.score2Date = theDate;
-    } else if (correctAnswers > scoreSet.score3Correct) {
-        scoreSet.score3Correct = correctAnswers;
-        scoreSet.score3Date = theDate;
-    } 
+    if (size === 1) {
+        if (correctAnswers > scoreSet.shortScore1Correct) {
+            scoreSet.shortScore3Correct = scoreSet.shortScore2Correct;
+            scoreSet.shortScore3Date = scoreSet.shortScore2Date;
+            scoreSet.shortScore2Correct = scoreSet.shortScore1Correct;
+            scoreSet.shortScore2Date = scoreSet.shortScore1Date;
+            scoreSet.shortScore1Correct = correctAnswers;
+            scoreSet.shortScore1Date = theDate;
+        } else if (correctAnswers > scoreSet.shortScore2Correct) {
+            scoreSet.shortScore3Correct = scoreSet.shortScore2Correct;
+            scoreSet.shortScore3Date = scoreSet.shortScore2Date;
+            scoreSet.shortScore2Correct = correctAnswers;
+            scoreSet.shortScore2Date = theDate;
+        } else if (correctAnswers > scoreSet.shortScore3Correct) {
+            scoreSet.shortScore3Correct = correctAnswers;
+            scoreSet.shortScore3Date = theDate;
+        } 
+    }
+    if (size === 2) {
+        if (correctAnswers > scoreSet.medScore1Correct) {
+            scoreSet.medScore3Correct = scoreSet.medScore2Correct;
+            scoreSet.medScore3Date = scoreSet.medScore2Date;
+            scoreSet.medScore2Correct = scoreSet.medScore1Correct;
+            scoreSet.medScore2Date = scoreSet.medScore1Date;
+            scoreSet.medScore1Correct = correctAnswers;
+            scoreSet.medScore1Date = theDate;
+        } else if (correctAnswers > scoreSet.medScore2Correct) {
+            scoreSet.medScore3Correct = scoreSet.medScore2Correct;
+            scoreSet.medScore3Date = scoreSet.medScore2Date;
+            scoreSet.medScore2Correct = correctAnswers;
+            scoreSet.medScore2Date = theDate;
+        } else if (correctAnswers > scoreSet.medScore3Correct) {
+            scoreSet.medScore3Correct = correctAnswers;
+            scoreSet.medScore3Date = theDate;
+        } 
+    }
+    if (size === 3) {
+        if (correctAnswers > scoreSet.longScore1Correct) {
+            scoreSet.longScore3Correct = scoreSet.longScore2Correct;
+            scoreSet.longScore3Date = scoreSet.longScore2Date;
+            scoreSet.longScore2Correct = scoreSet.longScore1Correct;
+            scoreSet.longScore2Date = scoreSet.longScore1Date;
+            scoreSet.longScore1Correct = correctAnswers;
+            scoreSet.longScore1Date = theDate;
+        } else if (correctAnswers > scoreSet.longScore2Correct) {
+            scoreSet.longScore3Correct = scoreSet.longScore2Correct;
+            scoreSet.longScore3Date = scoreSet.longScore2Date;
+            scoreSet.longScore2Correct = correctAnswers;
+            scoreSet.longScore2Date = theDate;
+        } else if (correctAnswers > scoreSet.longScore3Correct) {
+            scoreSet.longScore3Correct = correctAnswers;
+            scoreSet.longScore3Date = theDate;
+        } 
+    }
     localStorage.setItem('savedScores', JSON.stringify(scoreSet));
     console.log('saving scores now');
     displayScores();
