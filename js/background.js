@@ -1,4 +1,5 @@
 'use strict';
+document.body.background = 'images/' + randomBG();
 // code to randomize the homepage background 
 function randomBG(){
     var BG = 0;
