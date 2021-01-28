@@ -13,32 +13,31 @@ body {
 h1 {
   text-align: center;
   /* height: 50px; */
-  font-size: 30px;
-  background-color: yellowgreen;
-  color: rgb(68, 95, 15);
+  font-size: 50px;
+  background-color: rgb(116, 0, 211);
+  color: rgb(0, 0, 0);
 }
 
 h2 {
   font-size: 25px;
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
   text-decoration: underline;
 }
 
 h3 {
-  /* margin-top: 90px; */
-  /* margin-bottom: 15px; */
+  margin-top: 90px;
+  margin-bottom: 15px;
   font-size: 20px;
   text-decoration: underline;
 }
 
 nav {
   background-color: rgb(116, 0, 211);
-  
 }
 
 nav li {
   display: inline-block;
-  color: whitesmoke;
+  color: #551A8B;
   padding: 15px; 
   border-radius: 500px;
   background-color: rgb(180, 161, 55);
@@ -66,24 +65,31 @@ header {
 } */
 
 a {
-  color: green;
+  color: #551A8B;
   text-decoration: none;
 }
 
-
-
-
-#profilePic {
-  /* margin-left: 200px; */
-  /* margin-right: 50px; */
-  /* display: inline-block; */
+#center {
+  text-align: center;
 }
+
+
+/* #profilePic {
+  margin-left: 200px;
+  margin-right: 50px;
+  display: inline-block;
+} */
 
 div.item {
   vertical-align: top;
   /* margin-left: 50px;
   margin-right: 50px; */
+  /*
+  margin-left: 225px;
   margin-top: 50px;
+  */
+  margin-left:5%;
+  margin-right:5%;
   display: inline-block;
   /* text-align: center; */
 }
@@ -96,6 +102,7 @@ div.item {
 
 img {
   margin-bottom: 25px;
+  margin-top: 25px;
   /* background-color: grey; */
   /* margin-left: 50px; */
   height: 300px;
