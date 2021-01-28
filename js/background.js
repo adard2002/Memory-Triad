@@ -7,7 +7,7 @@ function randomBG(){
      BG = Math.floor(Math.random() * 3 ) + 1; // generates a random background from the 3 background images. 
     //  console.log(BG);
      if (BG === 1){
-         return 'background.jpg' // if the random number of 1 is chosen the background.jpg will be chosen
+         return 'background1.jpg' // if the random number of 1 is chosen the background.jpg will be chosen
      } else if (BG === 2){ // if the background.jpg isnt the chosen one it will go to the next option being background2.jpg
          return 'background2.jpg' // if the random number of 2 is chosen the background2.jpg will be chosen
      } else{ // if the background2.jpg isn't the chosen one it will go to the next option being background3.jpg
