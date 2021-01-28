@@ -3,23 +3,31 @@
 }
 
 body {
-  height: 1050px;
-  /* background-color: #cccccc; */
-  /* background-image: linear-gradient(rgb(43, 43, 43), rgb(187, 182, 255)); */
+  /* height: 1050px; */
+  background: url('../images/background.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  color: rgb(176, 255, 180);
 }
 
 h1 {
   text-align: center;
-  height: 50px;
+  /* height: 50px; */
   font-size: 30px;
   background-color: yellowgreen;
-  /* background-color:rgb(0, 0, 0); */
-  /* color:rgb(187, 182, 255); */
+  color: rgb(68, 95, 15);
 }
 
 h2 {
   font-size: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+h3 {
+  margin-top: 90px;
+  margin-bottom: 15px;
+  font-size: 20px;
   text-decoration: underline;
 }
 
@@ -41,6 +49,40 @@ header{
   text-align: center;
   font-size: 50px;
 }
+  display: inline-block;
+  color: whitesmoke;
+  padding: 15px; 
+  border-radius: 500px;
+  background-color: rgb(180, 161, 55);
+  margin-top: 15px;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+header{
+  text-align: center;
+  font-size: 50px;
+}
+
+nav a:hover {
+  color:rgb(191, 255, 179);
+  text-decoration: underline;
+  border: 5px solid rgb(68, 95, 15);
+  background-color:rgb(68, 95, 15);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+
+nav a:visited {
+  text-decoration: underline;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+
+
 
 #profilePic {
   margin-left: 200px;
@@ -50,11 +92,10 @@ header{
 
 div.item {
   vertical-align: top;
-  margin-left: 250px;
+  margin-left: 225px;
   margin-top: 50px;
   display: inline-block;
   text-align: center;
-  /* width: 120px; */
 }
 
 img {
@@ -67,12 +108,13 @@ img {
 img {
   height: 300px;
   width: 300px;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
 }
 
 span {
   text-align: center;
-  /* margin-left: 25px; */
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  font-size: 16px;
 }
 
 .caption {
@@ -82,15 +124,23 @@ span {
   text-align: center;
 }
 
-/* #desc p {
-
-} */
-
-/* #desc {
-  margin-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 200px;
-  font-size: 20px;
+.contact {
+  float: left;
+  display: block;
+  height: 200px;
+  width: 300px;
   text-align: center;
-} */
+  line-height: 20px;
+}
+
+.contactLinks {
+  color:rgb(0, 230, 210);
+}
+
+.contactEmail {
+  color:rgb(0, 230, 210);
+}
+
+
+
+
