@@ -3,109 +3,55 @@
  }
   
  body {
-  background-size: 100%; /* Changes size of background so it fites the whole screen and not repeated several times */
-  color: rgb(176, 255, 180); /* Changes the text in the body to green */
- }
-  
- h1 {
-  text-align: center; /* Puts the h1 text in the center of the page*/
-  font-size: 50px; /* Size of the h1 text */
-  background-color: rgb(116, 0, 211); /* Changes the background color of the h1 */
-  color: rgb(0, 0, 0); /* Changes color of the h1 text */
- }
-  
- h2 {
-  font-size: 25px; /* Size of the h2 text*/
-  margin-bottom: 15px; /* Puts a little of space at the bottom of the h2 so the words underneath it aren't right up next to the h2 and makes it look a little bit nicer*/
-  text-decoration: underline; /* Puts an underline under the h2 text */
- }
-  
- h3 {
-  margin-top: 90px; /* Puts a bit of space above the h3 so it doesn't overlap with the text above it */
-  margin-bottom: 15px; /* Puts a little bit of space below the h3 so it's not right up next to the header to make it look a little bit nicer */
-  font-size: 20px; /* Changes the size of the h3 text */
-  text-decoration: underline; /* Puts an underline under the h3 */
- }
-  
- nav { 
-  background-color: rgb(116, 0, 211); /* Changes the background color of the nav where the links are listed*/
- }
-  
- nav li {
-  display: inline-block; /* This lays the list of links out vertically rather than horizontally */
-  color: #551A8B; /* Changes the color of the text */ 
-  padding: 15px; /* The little bit of spacing around the links in the nav */
-  border-radius: 500px; /* Changes the shape of the border so it's a kind of circle or oval and not sharp edges */
-  background-color: rgb(180, 161, 55); /* Changes the background color */
-  margin-top: 15px; /* Puts a bit of space above the h3 so it doesn't overlap with the text above it */
-  margin-bottom: 5px; /* Puts a little bit of space below the links and borders so it's not right up next to the header to make it look a little bit nicer */
-  font-size: 25px; /* Changes the size of the link text */
- }
-  
- header {
-  text-align: center; /* Centers the header */
-  font-size: 50px; /* Changes the size of the header text */
- }
-  
-
- /* --------- Was thinking about this as an additional thing we could have for the hover effect for the nav ------*/
- /* nav a:hover {
-  margin: auto;
-}
-
-body {
   /* height: 1050px; */
   /* background: url('../images/background.jpg'); */
   /* background-repeat: no-repeat; */
   background-size: 100%;
   color: rgb(176, 255, 180);
-}
-
-h1 {
+ }
+  
+ h1 {
   text-align: center;
   /* height: 50px; */
-  font-size: 30px;
-  background-color: yellowgreen;
-  color: rgb(68, 95, 15);
-}
-
-h2 {
+  font-size: 50px;
+  background-color: rgb(116, 0, 211);
+  color: rgb(0, 0, 0);
+ }
+  
+ h2 {
   font-size: 25px;
   margin-bottom: 15px;
   text-decoration: underline;
-}
-
-h3 {
+ }
+  
+ h3 {
   margin-top: 90px;
   margin-bottom: 15px;
   font-size: 20px;
   text-decoration: underline;
-}
-
-nav{
-  background-color: rgb(116, 0, 211);
+ }
   
-}
-nav{
+ nav {
   background-color: rgb(116, 0, 211);
+ }
   
-}
-nav li{
+ nav li {
   display: inline-block;
-  color: whitesmoke;
-  padding: 15px; 
+  color: #551A8B;
+  padding: 15px;
   border-radius: 500px;
   background-color: rgb(180, 161, 55);
   margin-top: 15px;
-  font-size: 25px;
   margin-bottom: 5px;
-}
-header{
+  font-size: 25px;
+ }
+  
+ header {
   text-align: center;
   font-size: 50px;
-}
-
-nav a:hover {
+ }
+  
+ /* nav a:hover {
   color:rgb(191, 255, 179);
   text-decoration: underline;
   border: 5px solid rgb(68, 95, 15);
@@ -118,50 +64,26 @@ nav a:hover {
   text-decoration: underline;
  } */
   
- a { /* The color of the text is #551A8B and has no text-decoration */
+ a {
   color: #551A8B;
   text-decoration: none;
  }
   
- #center { 
-  text-align: center; /* Aligns the divs in the center */
+ #center {
+  text-align: center;
  }
+  
+  
+ /* #profilePic {
+  margin-left: 200px;
+  margin-right: 50px;
+  display: inline-block;
+ } */
   
  div.item {
-  vertical-align: top; /* Aligns the divs with the class of item at the top of the page */
-  margin-left:5%; /* Makes the space on the left and right 5% */
-  margin-right:5%;
-  display: inline-block; /* Changes so the divs are aligned properly */
- }
-  
- .allBios {
-  text-align: center; /* All text with the class of allBios are centered*/
-  }
-  
-  
- img {
-  margin-bottom: 25px; /* Puts a little bit of space below the images so it's not right up next to the images to make it look a little bit nicer */
-  margin-top: 25px; /* Puts a little bit of space above the images so it's not right up next to the images to make it look a little bit nicer */
-  height: 300px; /* The height and width are the sizes of the images measured by pixels */
-}
-
-#center {
-  text-align: center;
-}
-header{
-  text-align: center;
-  font-size: 50px;
-}
-
-
-#profilePic {
-  margin-left: 200px;
-  margin-top: 50px;
-  display: inline-block;
-}
-
-div.item {
   vertical-align: top;
+  /* margin-left: 50px;
+  margin-right: 50px; */
   /*
   margin-left: 225px;
   margin-top: 50px;
@@ -169,45 +91,46 @@ div.item {
   margin-left:5%;
   margin-right:5%;
   display: inline-block;
+  /* text-align: center; */
+ }
+  
+ .allBios {
   text-align: center;
-}
-
-img {
+  }
+  
+  
+ img {
   margin-bottom: 25px;
-  width: 250px;
-  height: 250px;
-  background-color: grey;
-}
-
-img {
+  margin-top: 25px;
+  /* background-color: grey; */
+  /* margin-left: 50px; */
   height: 300px;
   width: 300px;
-  box-shadow: 10px 10px 5px rgb(0, 0, 0); /* Puts a shadow behind the images to make it look a bit fancier*/
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
  }
   
  span {
-  text-align: center; /* All text with the span tags are centered*/ 
-  text-shadow: 2px 2px rgb(0, 0, 0); /* Puts a shadow behind the text in the span to make it a bit easier to read */
-  font-size: 16px; /* Changes the size of the span text */
+  text-align: center;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  font-size: 16px;
  }
   
  .caption {
-  display: block; /* Keeps all of the text under the images */
-  height: 200px; /* Height and width are the sizes of the caption areas */
+  display: block;
+  height: 200px;
   width: 300px;
-  text-align: center; /* All text with the class of caption are centered*/
+  text-align: center;
  }
   
  .contact {
-  display: block; /* Keeps all of the text under the images */
-  height: 100px; /* Height and width are the sizes of the contact tag areas */
+  float: left;
+  display: block;
+  height: 200px;
   width: 300px;
-  text-align: center; /* All text with the class of contact are centered*/
-  line-height: 20px; /* The spacing between the lines of text*/
+  text-align: center;
+  line-height: 20px;
  }
   
-
- /* Makes the links the color blue which is the rgb color */
  .contactLinks {
   color:rgb(0, 230, 210);
  }
