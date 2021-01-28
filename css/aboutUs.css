@@ -1,5 +1,5 @@
 * {
-  margin: auto;
+  margin: 0 auto;
 }
 
 body {
@@ -20,52 +20,50 @@ h1 {
 
 h2 {
   font-size: 25px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   text-decoration: underline;
 }
 
 h3 {
-  margin-top: 90px;
-  margin-bottom: 15px;
+  /* margin-top: 90px; */
+  /* margin-bottom: 15px; */
   font-size: 20px;
   text-decoration: underline;
 }
 
-nav{
+nav {
   background-color: rgb(116, 0, 211);
   
 }
-nav{
-  background-color: rgb(116, 0, 211);
-  
-}
-nav li{
+
+nav li {
   display: inline-block;
   color: whitesmoke;
   padding: 15px; 
   border-radius: 500px;
   background-color: rgb(180, 161, 55);
   margin-top: 15px;
-  font-size: 25px;
   margin-bottom: 5px;
+  font-size: 25px;
 }
-header{
+
+header {
   text-align: center;
   font-size: 50px;
 }
 
-nav a:hover {
+/* nav a:hover {
   color:rgb(191, 255, 179);
   text-decoration: underline;
   border: 5px solid rgb(68, 95, 15);
   background-color:rgb(68, 95, 15);
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
-}
+} */
 
-nav a:visited {
+/* nav a:visited {
   text-decoration: underline;
-}
+} */
 
 a {
   color: green;
@@ -76,27 +74,30 @@ a {
 
 
 #profilePic {
-  margin-left: 200px;
-  margin-top: 50px;
-  display: inline-block;
+  /* margin-left: 200px; */
+  /* margin-right: 50px; */
+  /* display: inline-block; */
 }
 
 div.item {
   vertical-align: top;
-  margin-left: 225px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
   margin-top: 50px;
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
 }
+
+.allBios {
+  text-align: center;
+  
+}
+
 
 img {
   margin-bottom: 25px;
-  width: 250px;
-  height: 250px;
-  background-color: grey;
-}
-
-img {
+  /* background-color: grey; */
+  /* margin-left: 50px; */
   height: 300px;
   width: 300px;
   box-shadow: 10px 10px 5px rgb(0, 0, 0);
