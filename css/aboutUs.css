@@ -50,6 +50,62 @@
 
  /* --------- Was thinking about this as an additional thing we could have for the hover effect for the nav ------*/
  /* nav a:hover {
+  margin: auto;
+}
+
+body {
+  /* height: 1050px; */
+  /* background: url('../images/background.jpg'); */
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  color: rgb(176, 255, 180);
+}
+
+h1 {
+  text-align: center;
+  /* height: 50px; */
+  font-size: 30px;
+  background-color: yellowgreen;
+  color: rgb(68, 95, 15);
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+h3 {
+  margin-top: 90px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+nav{
+  background-color: rgb(116, 0, 211);
+  
+}
+nav{
+  background-color: rgb(116, 0, 211);
+  
+}
+nav li{
+  display: inline-block;
+  color: whitesmoke;
+  padding: 15px; 
+  border-radius: 500px;
+  background-color: rgb(180, 161, 55);
+  margin-top: 15px;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+header{
+  text-align: center;
+  font-size: 50px;
+}
+
+nav a:hover {
   color:rgb(191, 255, 179);
   text-decoration: underline;
   border: 5px solid rgb(68, 95, 15);
@@ -87,6 +143,40 @@
   margin-bottom: 25px; /* Puts a little bit of space below the images so it's not right up next to the images to make it look a little bit nicer */
   margin-top: 25px; /* Puts a little bit of space above the images so it's not right up next to the images to make it look a little bit nicer */
   height: 300px; /* The height and width are the sizes of the images measured by pixels */
+}
+
+#center {
+  text-align: center;
+}
+
+
+#profilePic {
+  margin-left: 200px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+div.item {
+  vertical-align: top;
+  /*
+  margin-left: 225px;
+  margin-top: 50px;
+  */
+  margin-left:5%;
+  margin-right:5%;
+  display: inline-block;
+  text-align: center;
+}
+
+img {
+  margin-bottom: 25px;
+  width: 250px;
+  height: 250px;
+  background-color: grey;
+}
+
+img {
+  height: 300px;
   width: 300px;
   box-shadow: 10px 10px 5px rgb(0, 0, 0); /* Puts a shadow behind the images to make it look a bit fancier*/
  }
