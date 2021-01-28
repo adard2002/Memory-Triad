@@ -5,7 +5,7 @@ function randomBG(){
      BG = Math.floor(Math.random() * 3 ) + 1;
     //  console.log(BG);
      if (BG === 1){
-         return 'background1.jpg'
+         return 'background.jpg'
      } else if (BG === 2){
          return 'background2.jpg'
      } else{
@@ -13,3 +13,4 @@ function randomBG(){
      }
     
 }
+document.body.background = 'images/' + randomBG();
