@@ -13,12 +13,12 @@ function randomBG(){
      }
     
 }
-// document.body.background = 'images/' + randomBG();
+document.body.background = 'images/' + randomBG();
 
-// function thankFunction (event){
-//     // event.preventDefault();          Not used since we are not saving the data
-//     var nameInput = document.getElementById('name')
-//     var nameValue = nameInput.value;
-//     // console.log(nameValue);
-//     alert('Thank you for your feedback ' + nameValue );
-// }
+function thankFunction (event){
+    // event.preventDefault();          Not used since we are not saving the data
+    var nameInput = document.getElementById('name')
+    var nameValue = nameInput.value;
+    // console.log(nameValue);
+    alert('Thank you for your feedback ' + nameValue );
+}

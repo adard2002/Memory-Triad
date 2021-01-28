@@ -1,6 +1,7 @@
 'use strict';
 document.body.background = 'images/' + randomBG();
 // code to randomize the homepage background 
+// randomized background code finds a random number between 1 and 3 and then depending on that number gives it that background. 
 function randomBG(){
     var BG = 0;
      BG = Math.floor(Math.random() * 3 ) + 1;
