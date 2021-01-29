@@ -156,7 +156,7 @@ function populateQuestions() {
         {
             question:"The mythology of the vampire originates from what culture?",
             a1:"Greek",
-            a2:"Midieval Europe",
+            a2:"Medieval Europe",
             a3:"Syria",
             a4:"Ireland",
             correct:2
@@ -535,7 +535,6 @@ function nextQuestion() {
     button3.innerHTML = questions[currentQuestionIndex].a3;
     button4.innerHTML = questions[currentQuestionIndex].a4;
     //we count the number of turns
-    turnsTaken ++;
     var displayTurns = document.getElementById('turn-count');
     //on the page we grab a <p> tag that displays the turn count below
     displayTurns.textContent = turnsTaken + " out of " + turns;
@@ -567,7 +566,6 @@ function refreshQuiz() {
     button3.disabled = false;
     button4.disabled = false;
     populateQuestions();
-    nextQuestion();
 }
 //This function is an event listener for all four buttons with the multiple choice
 //answers. It takes a parameter of 1-4 from the web page and compairs it with
@@ -575,6 +573,7 @@ function refreshQuiz() {
 //variable and it alerts whether or not it was a correct answer.
 function checkAnswer(index) {
     console.log("the first button was clicked");
+    turnsTaken ++;
     if (questions[currentQuestionIndex].correct-1 === index) {
         alert('That is correct!');
         correctAnswers ++;
