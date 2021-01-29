@@ -3,6 +3,58 @@
  }
   
  body {
+
+  background-size: 100%; /* Changes size of background so it fites the whole screen and not repeated several times */
+  color: rgb(176, 255, 180); /* Changes the text in the body to green */
+ }
+  
+ h1 {
+  text-align: center; /* Puts the h1 text in the center of the page*/
+  font-size: 50px; /* Size of the h1 text */
+  background-color: rgb(116, 0, 211); /* Changes the background color of the h1 */
+  color: rgb(0, 0, 0); /* Changes color of the h1 text */
+ }
+  
+ h2 {
+  font-size: 25px; /* Size of the h2 text*/
+  margin-bottom: 15px; /* Puts a little of space at the bottom of the h2 so the words underneath it aren't right up next to the h2 and makes it look a little bit nicer*/
+  text-decoration: underline; /* Puts an underline under the h2 text */
+ }
+  
+ h3 {
+  margin-top: 90px; /* Puts a bit of space above the h3 so it doesn't overlap with the text above it */
+  margin-bottom: 15px; /* Puts a little bit of space below the h3 so it's not right up next to the header to make it look a little bit nicer */
+  font-size: 20px; /* Changes the size of the h3 text */
+  text-decoration: underline; /* Puts an underline under the h3 */
+ }
+  
+ nav { 
+  background-color: rgb(116, 0, 211); /* Changes the background color of the nav where the links are listed*/
+ }
+  
+ nav li {
+  display: inline-block; /* This lays the list of links out vertically rather than horizontally */
+  color: #551A8B; /* Changes the color of the text */ 
+  padding: 15px; /* The little bit of spacing around the links in the nav */
+  border-radius: 500px; /* Changes the shape of the border so it's a kind of circle or oval and not sharp edges */
+  background-color: rgb(180, 161, 55); /* Changes the background color */
+  margin-top: 15px; /* Puts a bit of space above the h3 so it doesn't overlap with the text above it */
+  margin-bottom: 5px; /* Puts a little bit of space below the links and borders so it's not right up next to the header to make it look a little bit nicer */
+  font-size: 25px; /* Changes the size of the link text */
+ }
+  
+ header {
+  text-align: center; /* Centers the header */
+  font-size: 50px; /* Changes the size of the header text */
+ }
+  
+
+ /* --------- Was thinking about this as an additional thing we could have for the hover effect for the nav ------*/
+ /* nav a:hover {
+  margin: auto;
+}
+*/
+body {
   /* height: 1050px; */
   /* background: url('../images/background.jpg'); */
   /* background-repeat: no-repeat; */
@@ -137,5 +189,10 @@
   
  .contactEmail {
   color:rgb(0, 230, 210);
- }
- 
+
+}
+
+#center {
+  text-align: center;
+}
+
