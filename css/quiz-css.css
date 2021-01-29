@@ -11,6 +11,9 @@ nav li{
 }
 header{
     background-color: rgb(116, 0, 211);
+    color: black;
+    text-shadow: none;
+    font-weight: normal;
     text-align: center;
     font-size: 50px;
     margin-bottom: 25px;
