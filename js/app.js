@@ -82,7 +82,7 @@ function populateQuestions() {
             correct: 2
         },
         {
-            question: "It got its name because of what?",
+            question: "The thunderbird got its name because of what?",
             a1: "The ACDC song Thunderstruck",
             a2: "Its mating call",
             a3: "The sound its wings made when flapping",
@@ -111,7 +111,7 @@ function populateQuestions() {
             a2: "Ability to heal",
             a3: "Causing people to go insane",
             a4: "Turning people to stone and killing them by looking at them",
-            Correct:4
+            correct:4
         },
         {
             question: "What was the name of the gorgon sister who perished?",
@@ -119,10 +119,10 @@ function populateQuestions() {
             a2: "Medusa",
             a3: "Akasha",
             a4: "Euryale",
-            Correct:2
+            correct:2
         },
         {
-            question: "Who was Medusa slain by?",
+            question: "Who ws Medusa slain by?",
             a1: "Perseus",
             a2: "Poseidon",
             a3: "Athena",
