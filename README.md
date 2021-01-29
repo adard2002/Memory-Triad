@@ -5,12 +5,11 @@
 ### Authors: Adara Townsend, Ben Hemann, and Daniel Rogahn
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* https://www.w3schools.com/howto/howto_css_flip_image.asp Used as reference for the cards and flipping them.
-* https://docs.google.com/drawings/d/1x06pTW7sNKQeYykRv_Sf9VuGsr0VKKibgXXojfrjdPU/edit?usp=sharing Wireframe for the quiz page
-* https://docs.google.com/drawings/d/11ePUzTSPQ_CFE8P9bMs0dvyRTAth0_-8auYGDbkruaY/edit Wireframe for the About Us page
-* https://docs.google.com/drawings/d/1cN5aU8ji-ifQ8Bsc3aM8cMhG-obwma6PE0VGJ4O5hms/edit Wireframe for the Home Page
-* 
+* [Used as reference for the cards and flipping them.]( https://www.w3schools.com/howto/howto_css_flip_image.asp )
+* [Wireframe for the quiz page](https://docs.google.com/drawings/d/1x06pTW7sNKQeYykRv_Sf9VuGsr0VKKibgXXojfrjdPU/edit?usp=sharing )
+* [Wireframe for the About Us page](https://docs.google.com/drawings/d/11ePUzTSPQ_CFE8P9bMs0dvyRTAth0_-8auYGDbkruaY/edit )
+* [Wireframe for the Home Page](https://docs.google.com/drawings/d/1cN5aU8ji-ifQ8Bsc3aM8cMhG-obwma6PE0VGJ4O5hms/edit)
+* [UserStories](https://docs.google.com/document/d/1LaakzMko6I535rUHdHolO-MO_Wrxu1syl1fvv1EnBF8/edit)
 
 ### Reflections and Comments
 * Consider including the answers to your daily journal and submission questions here
