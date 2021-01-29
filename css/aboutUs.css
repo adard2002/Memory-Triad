@@ -1,5 +1,6 @@
 * {
   margin: 0 auto;
+
  }
   
  body {
@@ -50,7 +51,7 @@
 
  /* --------- Was thinking about this as an additional thing we could have for the hover effect for the nav ------*/
  /* nav a:hover {
-  margin: auto;
+  margin: 
 }
 */
 body {
@@ -64,9 +65,9 @@ body {
 h1 {
   text-align: center;
   /* height: 50px; */
-  font-size: 30px;
-  background-color: yellowgreen;
-  color: rgb(68, 95, 15);
+  font-size: 50px;
+  background-color: rgb(116, 0, 211);
+  color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -82,37 +83,41 @@ h3 {
   text-decoration: underline;
 }
 
-nav{
+nav {
   background-color: rgb(116, 0, 211);
-  
 }
-nav{
-  background-color: rgb(116, 0, 211);
-  
-}
-nav li{
+
+nav li {
   display: inline-block;
-  color: whitesmoke;
+  color: #551A8B;
   padding: 15px; 
   border-radius: 500px;
   background-color: rgb(180, 161, 55);
   margin-top: 15px;
-  font-size: 25px;
   margin-bottom: 5px;
+  font-size: 25px;
 }
-header{
+
+header {
   text-align: center;
   font-size: 50px;
 }
 
-nav a:hover {
+/* nav a:hover {
   color:rgb(191, 255, 179);
   text-decoration: underline;
   border: 5px solid rgb(68, 95, 15);
   background-color:rgb(68, 95, 15);
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
- } */
+
+} */
+
+/* nav a:visited {
+  text-decoration: underline;
+} */
+
+
   
  /* nav a:visited {
   text-decoration: underline;
@@ -154,14 +159,16 @@ header{
 }
 
 
-#profilePic {
+/* #profilePic {
   margin-left: 200px;
-  margin-top: 50px;
+  margin-right: 50px;
   display: inline-block;
-}
+} */
 
 div.item {
   vertical-align: top;
+  /* margin-left: 50px;
+  margin-right: 50px; */
   /*
   margin-left: 225px;
   margin-top: 50px;
@@ -169,17 +176,20 @@ div.item {
   margin-left:5%;
   margin-right:5%;
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
 }
+
+.allBios {
+  text-align: center;
+  
+}
+
 
 img {
   margin-bottom: 25px;
-  width: 250px;
-  height: 250px;
-  background-color: grey;
-}
-
-img {
+  margin-top: 25px;
+  /* background-color: grey; */
+  /* margin-left: 50px; */
   height: 300px;
   width: 300px;
   box-shadow: 10px 10px 5px rgb(0, 0, 0); /* Puts a shadow behind the images to make it look a bit fancier*/
